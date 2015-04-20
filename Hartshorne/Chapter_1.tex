@@ -1,0 +1,39 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+\newtheorem{problem}{Problem}
+\numberwithin{problem}{section}
+
+\newenvironment{solution}
+               {\let\oldqedsymbol=\qedsymbol
+                \renewcommand{\qedsymbol}{$\blacktriangleleft$}
+                \begin{proof}[\bfseries\upshape Solution]}
+               {\end{proof}
+                \renewcommand{\qedsymbol}{\oldqedsymbol}}
+
+\begin{document}
+
+\section{Variety}
+
+\begin{problem}
+This is a problem
+\begin{solution}
+This is a new solution	
+\end{solution}	
+\end{problem}
+
+
+
+\section{Projective Varieties}
+
+\begin{problem}
+This is a problem
+\begin{solution}
+This is a new solution	
+\end{solution}	
+\end{problem}
+
+\end{document}
